@@ -4,7 +4,7 @@
 #include <limits.h>
 
 /**
- * main - check the code
+ * main  - function that allocates memory using malloc
  *
  * Return: Always 0.
  */
