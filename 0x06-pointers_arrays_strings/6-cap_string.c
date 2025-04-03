@@ -9,14 +9,14 @@ char *cap_string(char *str)
 {
 	int i = 0;
 	int j;
-	int separators[] = " \t\n,;.!?"(){}"
+	char separators[] = " \t\n,;.!?\"(){}";
 	int new_word = 1;
 
 	while (str[i] != '\0')
 	{
 		if (new_word && str[i] >= 'a' && str[i] <= 'z')
 		{
-			stri[i] -= 32;
+			str[i] -= 32;
 			new_word = 0;
 		} else
 		{
